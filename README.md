@@ -1,20 +1,25 @@
 Very Rough template / Guide to using RMarkdown for writing your thesis\!
 ================
 
-    #bibliography: ../references.bib
+## Rmarkdown preamble:
+
     output:
       #word_document
       pdf_document:
         fig_caption: yes
     fontsize: 12pt
+    bibliography: bibliography.bib
     linkcolor: blue
     csl: journal-of-ecology.csl
 
-<pre>
-
 ## Bibliography
 
-Install the Google Scholar browser extension
+  - [Rstudio’s guide:
+    authoring\_bibliographies\_and\_citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
+
+My workflow:
+
+0.  Install the Google Scholar browser extension
 
 1.  Open a paper you want to cite, for example [this
     paper](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.2041-210x.2012.00261.x)
@@ -41,9 +46,9 @@ Install the Google Scholar browser extension
 4.  Copy this into your `bibliography.bib`
 
 5.  You can then cite it from within your document by writing:
-    `[@nakagawa2013general]` (Nakagawa & Schielzeth, 2013)
+    `[@nakagawa2013general]` (Nakagawa and Schielzeth 2013)
 
-or unquoted `@nakagawa2013general` Nakagawa & Schielzeth (2013)
+or unquoted `@nakagawa2013general` Nakagawa and Schielzeth (2013)
 
 Cite mulitple authours by typing `[@nakagawa2013general;
 nakagawa2013general]`, seperating them with a `;`
@@ -70,9 +75,9 @@ included in a similar way
 
 <div id="ref-nakagawa2013general">
 
-Nakagawa, S., & Schielzeth, H. (2013). A general and simple method for
-obtaining r2 from generalized linear mixed-effects models. *Methods in
-Ecology and Evolution*, *4*(2), 133–142.
+Nakagawa, Shinichi, and Holger Schielzeth. 2013. “A General and Simple
+Method for Obtaining R2 from Generalized Linear Mixed-Effects Models.”
+*Methods in Ecology and Evolution* 4 (2). Wiley Online Library: 133–42.
 
 </div>
 

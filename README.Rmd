@@ -3,30 +3,33 @@ output:
   #html_document
   #pdf_document
   github_document
-include_toc: true
 bibliography: bibliography.bib
 title: Very Rough template / Guide to using RMarkdown for writing your thesis!
 linkcolor: blue
-csl: journal-of-ecology.csl
+
 ---
+
+## Rmarkdown preamble:
 
 
 ```
-#bibliography: ../references.bib
 output:
   #word_document
   pdf_document:
     fig_caption: yes
 fontsize: 12pt
+bibliography: bibliography.bib
 linkcolor: blue
 csl: journal-of-ecology.csl
 ```
-<pre>
 
 ## Bibliography
 
+* [Rstudio's guide: authoring_bibliographies_and_citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
 
-Install the Google Scholar browser extension
+My workflow: 
+
+0. Install the Google Scholar browser extension
 
 1. Open a paper you want to cite, for example [this paper](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.2041-210x.2012.00261.x)
 
